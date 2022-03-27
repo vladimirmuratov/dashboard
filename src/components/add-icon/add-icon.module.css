@@ -1,0 +1,32 @@
+.add_icon{
+    background: var(--cyan);
+    box-shadow: 0 0 1rem var(--lightgray);
+
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+
+    font-size: 3rem;
+    color: var(--lightgray);
+
+    padding: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.add_icon:hover{
+    box-shadow: 0 0 1rem var(--darkgray);
+    color: var(--darkgray);
+}
+
+.add_icon:active{
+    box-shadow: 0 0 2rem var(--darkgray);
+}

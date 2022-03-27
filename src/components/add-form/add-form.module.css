@@ -1,0 +1,21 @@
+.add_form {
+    margin-top: 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add_form__input {
+    width: 70%;
+    padding: 1rem;
+    border-radius: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.add_form__button {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--darkblue);
+    color: var(--lightgray);
+}

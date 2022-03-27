@@ -1,0 +1,23 @@
+.card_container{
+    width: 90%;
+    height: 6rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.card_container__remove_icon{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    transition: all 0.3s linear;
+}
+
+.card_container__remove_icon:hover{
+    color: var(--lightgray);
+}
