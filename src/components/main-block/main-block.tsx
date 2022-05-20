@@ -149,7 +149,7 @@ export const MainBlock = (): JSX.Element => {
             await dispatch(fetchTodos())
             setMovedTodo(null)
         }
-    };
+    }
 
     return (
         <>

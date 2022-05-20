@@ -9,11 +9,11 @@ import {Auth} from "../../types";
 import {toast} from "react-toastify";
 import {Preloader} from "../preloader/preloader";
 
-type Inputs = {
+interface IInput {
     name: string,
     email: string,
     password: string,
-};
+}
 
 export const Form: React.FC = (): JSX.Element => {
     const dispatch = useAppDispatch()
@@ -21,9 +21,9 @@ export const Form: React.FC = (): JSX.Element => {
     const [isLogin, setIsLogin] = useState(true)
     const [showPass, setShowPass] = useState(false)
     const [userName, setUserName] = useState('')
-    const {register, handleSubmit, formState: {errors}} = useForm<Inputs>()
+    const {register, handleSubmit, formState: {errors}} = useForm<IInput>()
 
-    const onSubmit: SubmitHandler<Inputs> = async (dataForm: Auth) => {
+    const onSubmit: SubmitHandler<IInput> = async (dataForm: Auth) => {
         setUserName(dataForm.name)
         if (!isLogin) {
             await dispatch(signUp(dataForm))

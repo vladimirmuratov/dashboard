@@ -81,7 +81,7 @@ const initialState: IInitialState = {
     isLoading: false,
     error: '',
     data: null as unknown as AuthResponse,
-    user: null as unknown as User,
+    user: null as unknown as User
 }
 
 const authSlice = createSlice({

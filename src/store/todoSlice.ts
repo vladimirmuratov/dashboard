@@ -111,6 +111,13 @@ const todoSlice = createSlice({
             .addCase(addNewTodo.fulfilled, (state) => {
                 state.isLoading = false
             })
+            .addCase(deleteTodo.pending, (state) => {
+                state.isLoading = true
+                state.error = ''
+            })
+            .addCase(deleteTodo.fulfilled, (state) => {
+                state.isLoading = false
+            })
             .addMatcher(isError, (state, action: PayloadAction<string>) => {
                 state.error = action.payload;
                 state.isLoading = false;
