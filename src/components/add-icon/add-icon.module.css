@@ -3,10 +3,10 @@
     box-shadow: 0 0 1rem var(--lightgray);
 
     position: absolute;
-    top: 5rem;
+    top: 10rem;
     left: 5rem;
 
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--lightgray);
 
     padding: 2rem;

@@ -1,0 +1,36 @@
+.modal_wrapper{
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--blue);
+    border-radius: 2rem;
+}
+
+.modal_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+.closeIcon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 3rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: var(--lightgray);
+}
+
+.closeIcon:hover {
+    color: red;
+}

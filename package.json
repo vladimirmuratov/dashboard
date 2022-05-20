@@ -1,8 +1,9 @@
 {
-  "name": "dash-board",
-  "version": "0.1.0",
+  "name": "dashboard3.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -11,12 +12,17 @@
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "axios": "^0.26.1",
+    "bootstrap-icons": "^1.8.2",
+    "nanoid": "^3.3.4",
     "react": "^17.0.2",
     "react-dnd": "^15.1.1",
     "react-dnd-html5-backend": "^15.1.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.31.1",
+    "react-modal": "^3.15.1",
+    "react-redux": "^8.0.1",
     "react-scripts": "5.0.0",
-    "typescript": "^4.6.3",
+    "react-toastify": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-modal": "^3.13.1",
+    "typescript": "^4.6.4"
   }
 }

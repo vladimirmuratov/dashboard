@@ -1,13 +1,15 @@
 import React from "react";
-import {TCard} from "../../types";
+import {Todo} from "../../types";
 import styles from "./card.module.css";
 import {useDrag} from "react-dnd";
 
-type TProps = {
+interface IProps {
+    item: Todo;
     onRemove: (id: string) => void;
-} & TCard
+}
 
-export const Card: React.FC<TProps> = ({id, text, color, onRemove}): JSX.Element => {
+export const Card: React.FC<IProps> = ({item, onRemove}): JSX.Element => {
+    const {id, color, text} = item
     const [{isDrag}, dragRef] = useDrag(() => ({
         type: "card",
         item: {id},

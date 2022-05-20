@@ -1,4 +1,7 @@
-export const BASE_URL = "https://dashboard-4d309-default-rtdb.europe-west1.firebasedatabase.app/"
+export const BASE_URL = "https://dashboard-4d309-default-rtdb.europe-west1.firebasedatabase.app"
+export const AUTH_URL = "https://identitytoolkit.googleapis.com/v1"
+export const WEB_API_KEY = "AIzaSyBu9hLqjHRG66SW9juWSz5VMfjAtIp6LCo"
+export const REFRESH_TOKEN_URL = `https://securetoken.googleapis.com/v1/token?key=${WEB_API_KEY}`
 
 export const colors = [
     "#ffcdd2",

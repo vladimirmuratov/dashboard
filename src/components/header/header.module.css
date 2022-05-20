@@ -1,0 +1,50 @@
+.header_block {
+    position: relative;
+
+    height: 5rem;
+    background-color: var(--middleblue);
+    box-shadow: 0 0 2rem var(--gray);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--lightgray);
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 2px var(--darkgray), 0 0 1em var(--lightgray);
+}
+
+.header_block_user {
+    position: absolute;
+    right: 8rem;
+
+    background-color: inherit;
+    color: var(--lightgray);
+    font-size: 1.5rem;
+    outline: none;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s;
+}
+
+.header_block_user:hover {
+    color: white;
+}
+
+.header_block_exit {
+    position: absolute;
+    right: 2rem;
+
+    background-color: inherit;
+    color: var(--lightgray);
+    font-size: 1.5rem;
+    outline: none;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.header_block_exit:hover{
+    color: red;
+}

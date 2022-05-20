@@ -1,0 +1,13 @@
+.main_block__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_block__block:not(.main_block__block:last-child) {
+    border-right: 2px solid var(--lightgray);
+}
+
+h3 {
+    margin-top: 1rem;
+}
