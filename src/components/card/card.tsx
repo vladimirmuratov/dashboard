@@ -28,7 +28,7 @@ export const Card: React.FC<IProps> = ({item, onRemove}): JSX.Element => {
                 >
                     &times;
                 </span>
-                <h3>{text}</h3>
+                <h3 className={styles.card_title}>{text}</h3>
             </div>)
             }
         </>

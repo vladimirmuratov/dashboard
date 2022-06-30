@@ -13,7 +13,7 @@ interface IProps {
 
 export const Block: React.FC<IProps> = ({title, block, onRemove, myRef, children}): JSX.Element => (
     <section ref={myRef} className={styles.main_block__block}>
-        <h3>{title}</h3>
+        <h3 className={styles.main_block__title}>{title}</h3>
         {block.length ? block.map(item => <Card key={item.id} item={item} onRemove={onRemove}/>) : ''}
         {children}
     </section>

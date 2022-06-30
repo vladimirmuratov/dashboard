@@ -19,12 +19,12 @@ export const Header = () => {
 
     return (
         <header className={styles.header_block}>
-            Dashboard
+            <div>Dashboard</div>
             {user?.name?.length
-                ? (<>
-                    <span className={styles.header_block_user}>{user.name}</span>
+                ? (<div className={styles.header_block_user}>
+                    <span >{user.name}</span>
                     <span className={styles.header_block_exit} onClick={handleLogout}>Exit</span>
-                </>)
+                </div>)
                 : < button className={styles.header_block_user} onClick={handleLogin}>Вход/Регистрация</button>
             }
         </header>

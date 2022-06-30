@@ -159,13 +159,13 @@ export const MainBlock = (): JSX.Element => {
                 ? <Preloader/>
                 : (<main className={styles.main_block} onDoubleClick={() => setShowForm(false)}>
                     <>
-                        <Block title={'block 1'} block={block_one} onRemove={handleRemoveTodo}>
+                        <Block title={'started'} block={block_one} onRemove={handleRemoveTodo}>
                             {isShowForm && <AddForm onAdd={handleAddTodo}/>}
                         </Block>
 
-                        <Block title={'block 2'} block={block_two} onRemove={handleRemoveTodo} myRef={dropTarget}/>
+                        <Block title={'continue'} block={block_two} onRemove={handleRemoveTodo} myRef={dropTarget}/>
 
-                        <Block title={'block 3'} block={block_three} onRemove={handleRemoveTodo}
+                        <Block title={'finished'} block={block_three} onRemove={handleRemoveTodo}
                                myRef={dropTarget2}/>
                     </>
                 </main>)

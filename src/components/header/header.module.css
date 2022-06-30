@@ -18,7 +18,12 @@
 
 .header_block_user {
     position: absolute;
-    right: 8rem;
+    right: 6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
     background-color: inherit;
     color: var(--lightgray);
@@ -33,9 +38,6 @@
 }
 
 .header_block_exit {
-    position: absolute;
-    right: 2rem;
-
     background-color: inherit;
     color: var(--lightgray);
     font-size: 1.5rem;
@@ -45,6 +47,17 @@
     cursor: pointer;
 }
 
-.header_block_exit:hover{
+.header_block_exit:hover {
     color: red;
+}
+
+@media (max-width: 426px) {
+    .header_block {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .header_block_user {
+        position: unset;
+    }
 }

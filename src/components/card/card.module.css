@@ -1,7 +1,6 @@
-.card_container{
+.card_container {
     width: 90%;
     height: 6rem;
-    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,13 +10,34 @@
     position: relative;
 }
 
-.card_container__remove_icon{
+.card_container__remove_icon {
     position: absolute;
     right: 1rem;
     top: 1rem;
     transition: all 0.3s linear;
 }
 
-.card_container__remove_icon:hover{
+.card_container__remove_icon:hover {
     color: var(--lightgray);
+}
+
+.card_title {
+    font-size: 2rem;
+}
+
+@media (max-width: 426px) {
+    .card_container__remove_icon {
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+
+    .card_title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 321px) {
+    .card_title {
+        word-break: break-all;
+    }
 }
